@@ -3,12 +3,12 @@
   region = "us-east-2"
 }
 
-resource "aws_s3_bucket" "Sujay" {
-  bucket = "my-tf-test-bucket"
+resource "aws_s3_bucket" "Pioneer" {
+  bucket = "Pioneer"
   acl    = "private"
 
   tags = {
-    Name        = "Sujay"
+    Name        = "Pioneer"
     Environment = "Dev"
   }
 }
