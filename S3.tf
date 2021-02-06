@@ -1,6 +1,6 @@
   provider "aws" {
   version = "2.33.0"
-  region = ""
+  region = "us-east-2"
 }
 
 resource "aws_s3_bucket" "b" {
@@ -8,7 +8,7 @@ resource "aws_s3_bucket" "b" {
   acl    = "private"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "Sujay"
     Environment = "Dev"
   }
 }
