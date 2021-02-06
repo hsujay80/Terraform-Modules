@@ -1,8 +1,8 @@
  provider "aws" {
   version = "2.33.0"
 }
-resource "aws_s3_bucket" "Sujay" {
-  bucket = "Sujay"
+resource "aws_s3_bucket" "b" {
+  bucket = "my-tf-test-bucket"
   acl    = "private"
 
   tags = {
@@ -10,5 +10,4 @@ resource "aws_s3_bucket" "Sujay" {
     Environment = "Dev"
   }
 }
-
 
