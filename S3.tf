@@ -1,4 +1,4 @@
-module "s3_bucket" {
+resource "s3_bucket" {
   
   bucket = "var.bucket_name"
   acl    = "private"
