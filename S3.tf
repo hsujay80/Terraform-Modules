@@ -1,8 +1,8 @@
  provider "aws" {
   version = "2.33.0"
 }
-resource "aws_s3_bucket" "b" {
-  bucket = "${var.bucket_name}"
+resource "aws_s3_bucket" "Sujay" {
+  bucket = "Sujay"
   acl    = "private"
 
   tags = {
@@ -11,4 +11,4 @@ resource "aws_s3_bucket" "b" {
   }
 }
 
-variable "bucket_name" {}
+
