@@ -1,13 +1,14 @@
  provider "aws" {
   version = "2.33.0"
 }
-resource "s3_bucket" {
-  bucket = "var.bucket_name"
+resource "aws_s3_bucket" "b" {
+  bucket = "${var.bucket_name}"
   acl    = "private"
 
-  versioning = {
-    enabled = true
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
   }
-
 }
+
 variable "bucket_name" {}
